@@ -13,7 +13,10 @@
 	<bean id="interfaceDao" class="com.baidu.mgame.interfacetest.dao.impl.InterfaceDaoImpl" scope="singleton">
 		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
 	</bean>
-	
+
+
+
+
 	<bean id="projectCommonDao" class="com.baidu.mgame.interfacetest.dao.impl.ProjectCommonDaoImpl" scope="singleton">
 		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
 	</bean>
