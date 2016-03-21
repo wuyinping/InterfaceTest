@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>interfacetest</display-name>
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath*:com/baidu/mgame/interfacetest/conf/applicationContext*.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>ProjectView</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.ProjectViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProjectView</servlet-name>
+    <url-pattern>/projectView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SaveProject</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.SaveProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveProject</servlet-name>
+    <url-pattern>/saveProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteProject</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.DeleteProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProject</servlet-name>
+    <url-pattern>/deleteProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateProjectVersion</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.UpdateProjectVersionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProjectVersion</servlet-name>
+    <url-pattern>/updateProjectVersion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SaveProjectVersion</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.SaveProjectVersionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveProjectVersion</servlet-name>
+    <url-pattern>/saveProjectVersion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteProjectVersion</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.DeleteProjectVersionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProjectVersion</servlet-name>
+    <url-pattern>/deleteProjectVersion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateProjectEnv</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.UpdateProjectEnvServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProjectEnv</servlet-name>
+    <url-pattern>/updateProjectEnv</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SaveProjectEnv</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.SaveProjectEnvServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveProjectEnv</servlet-name>
+    <url-pattern>/saveProjectEnv</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteProjectEnv</servlet-name>
+    <servlet-class>com.baidu.mgame.interfacetest.servlet.DeleteProjectEnvServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProjectEnv</servlet-name>
+    <url-pattern>/deleteProjectEnv</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>WebRoot/index.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

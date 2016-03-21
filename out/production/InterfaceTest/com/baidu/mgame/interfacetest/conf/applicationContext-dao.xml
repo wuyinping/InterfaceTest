@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	
+	<bean id="projectDao" class="com.baidu.mgame.interfacetest.dao.impl.ProjectDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+	<bean id="expectDao" class="com.baidu.mgame.interfacetest.dao.impl.ExpectDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+	<bean id="interfaceDao" class="com.baidu.mgame.interfacetest.dao.impl.InterfaceDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+	<bean id="projectCommonDao" class="com.baidu.mgame.interfacetest.dao.impl.ProjectCommonDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+	<bean id="projectUrlDao" class="com.baidu.mgame.interfacetest.dao.impl.ProjectUrlDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+	<bean id="projectVersionDao" class="com.baidu.mgame.interfacetest.dao.impl.ProjectVersionDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+	<bean id="usecaseDao" class="com.baidu.mgame.interfacetest.dao.impl.UsecaseDaoImpl" scope="singleton">
+		<property name="interfaceJdbcTemplate" ref="interfaceJdbcTemplate"/>
+	</bean>
+	
+</beans>
