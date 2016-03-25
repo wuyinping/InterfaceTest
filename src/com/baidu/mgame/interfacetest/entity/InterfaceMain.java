@@ -15,13 +15,21 @@ public class InterfaceMain implements java.io.Serializable {
 
     // Fields
     private int id;
+    //版本
     private int version_id;
+    //
     private String tag;
+    //地址
     private String url;
+    //描述
     private String description;
+    //加密key
     private int usekey;
+//    请求类型：post，get
     private int request_type;
+//    对应的后端接口
     private String c_interface;
+//    数据库表
     private String table;
     private String def_field1;
     private String def_field2;

@@ -103,7 +103,7 @@ public class ProjectServiceImpl implements IProjectService {
         ProjectMain project = new ProjectMain();
         project.setP_name(pName);
         project.setP_key(pKey);
-        int pid = this.projectDao.insertProject(project);
+        int pid = this.projectDao.(project);
         if (pid <= 0) {
             throw new Exception("项目新增失败，请检查数据！");
         }

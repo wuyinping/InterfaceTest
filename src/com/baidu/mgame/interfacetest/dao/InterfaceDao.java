@@ -30,7 +30,7 @@ public interface InterfaceDao {
      * @return
      * @throws Exception
      */
-    public InterfaceMain getInterfaceByTag(Integer vid, String tag) throws Exception;
+    public List<InterfaceMain> getInterfaceByTag(Integer vid, String tag) throws Exception;
 
     /**
      * 新增接口
