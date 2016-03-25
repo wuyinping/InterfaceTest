@@ -44,7 +44,9 @@
     
     col = row.insertCell(1);
     col.align="center";
-    
+
+
+
     col = row.insertCell(2);
     col.align="center";
     col.innerHTML = "<a href='#' onclick='tableDeleteRow(this.parentElement.parentElement.rowIndex);' >删除</a>";
